@@ -9,6 +9,7 @@ export type UIParticipant = {
   isMuted: boolean;
   isLocal?: boolean;
   audioLevel?: number;
+  connectionQuality?: 'excellent' | 'good' | 'poor' | 'unknown';
 };
 
 export type ParticipantState = {

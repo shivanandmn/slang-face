@@ -38,6 +38,20 @@ export const UI_CONFIG = {
   AUDIO_LEVEL_UPDATE_INTERVAL: 100, // ms
 } as const;
 
+// Chat Service Configuration
+export const CHAT_CONFIG = {
+  MAX_RETRY_ATTEMPTS: 3,
+  RETRY_BASE_DELAY: 500, // ms
+  MAX_RETRY_DELAY: 5000, // ms
+  MESSAGE_TIMEOUT: 10000, // ms
+  DELIVERY_CONFIRMATION_TIMEOUT: 5000, // ms
+  TYPING_INDICATOR_TIMEOUT: 3000, // ms
+  MAX_HISTORY_SIZE: 500,
+  FAILED_MESSAGE_CLEANUP_DELAY: 30000, // ms
+  DELIVERED_MESSAGE_CLEANUP_DELAY: 5000, // ms
+  MAX_MESSAGE_LENGTH: 1000,
+} as const;
+
 // Logging Configuration
 export const LOG_CONFIG = {
   LEVELS: ['debug', 'info', 'warn', 'error'] as const,
